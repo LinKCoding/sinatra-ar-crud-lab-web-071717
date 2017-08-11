@@ -1,0 +1,5 @@
+<h3> Posts </h3>
+<% Post.all.each do |post|  %>
+  <p> <a href="/posts/<%=post.id%>"><%= post.name %></a></p>
+  <p> <%= post.content %></p>
+<% end %>
